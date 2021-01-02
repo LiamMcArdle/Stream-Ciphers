@@ -9,10 +9,7 @@
 #include <string>
 
 
-
-#ifndef MARMOSET_TESTING
 int main();
-#endif
 
 char *encode(char *plaintext, unsigned long key);
 
@@ -33,8 +30,6 @@ char *to_ascii_armour(unsigned char* unamored_text, std::size_t size);
 char* from_ascii_armour(char* armored_text, std::size_t size);
 
 
-
-#ifndef MARMOSET_TESTING
 int main() {
 	char test[] {};
 
@@ -57,7 +52,6 @@ int main() {
 
 		return 0;
 }
-#endif
 
 char *encode(char *plaintext, unsigned long key) {
 
